@@ -52,6 +52,8 @@
     font-size: 18px;
     font-weight: 600;
     margin: 14px 0;
+    color: $white-normal;
+    border-radius: 8px;
 }
 .button-contact:hover {
     animation: scaleButton 0.8s alternate infinite;
@@ -201,5 +203,80 @@
     }
     .haircut img {
         max-width: 740px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 16px;
+    color: $white-normal;
+}
+.footer-icons a:hover {
+    i {
+        color: $red-light;
+        animation: translateY 0.8s infinite alternate;
+    }
+}
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0 20px 20px 0;
+
+
+    img {
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+}
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp {
+        img {
+            max-width: 64px;
+        }
     }
 }
