@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Barber</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
@@ -17,7 +19,7 @@
     <div class="bg-home">
         <header>
             <nav class="header-content conteiner">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down" data-aos-delay="500" >
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -32,17 +34,21 @@
                         
                     </a>
                 </div>
-                <div class="header-logo">
-                    <img src="asstes/logo.svg"
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="1000" 
+             >
+                    <img 
+                    
+                  
+                    src="asstes/logo.svg"
                      alt="">
                 </div>
-                <div >
+                <div data-aos="fade-down" data-aos-delay="1500" >
                     <a class="header-button" href="#">
                         Agendar Horario
                     </a>
                 </div>
             </nav>
-            <main class="hero conteiner">
+            <main class="hero conteiner" data-aos="fade-up" >
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE.</h1>
                 <p>
                     Horario de fuincionamento: 9:00 as 19:00
@@ -57,11 +63,13 @@
     </div>
     <section class="about">
         <div class="conteiner about-content">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="asstes/images.svg"
                 alt="">
             </div>
-            <div class="about-description">
+            <div class="about-description" 
+            data-aos="zoom-out-left" data-aos-delay="250">
+
                 <h2>Sobre</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id recusandae magnam veritatis modi officia voluptatem fugiat tempora a. Alias minus ipsam minima quaerat optio enim sit modi in non fuga!</p>
                 <p>Horario de funcionamento: <strong>9:00 </strong> as <strong>19:00</strong></p>
@@ -76,7 +84,7 @@
         </div>
         <section class="haircuts">
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="300">
                 <img src="asstes/corte1.png"
                  alt="">
                 <div class="hair-info">
@@ -87,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="haircut">
+            <div class="haircut" data-aos="fade-down" data-aos-delay="500">
                 <img src="asstes/corte2.png"
                  alt="">
                 <div class="hair-info">
@@ -97,7 +105,7 @@
                     </button>
                 </div>
             </div>
-            <div class="haircut">
+            <div class="haircut"  data-aos="fade-up" data-aos-delay="700">
                 <img src="asstes/corte3.png"
                  alt="">
                 <div class="hair-info">
@@ -149,6 +157,8 @@
         <img src="asstes/whatssapp.svg" alt="">
         <span class="tooltip-text">Agende seu Horario</span>
     </a>
-
+    <script src="script.js">
+        
+    </script>
 </body>
 </html>
