@@ -37,7 +37,7 @@ body {
     font: 18px;
 }
 
-.conteudo {
+.conteudo{
     margin-bottom: 48px;
     border-top: 0.4px solid #FFF2E7;
 }
@@ -49,21 +49,82 @@ body {
     justify-content: space-around;
 }
 
-.conteudo-principal-escrito {
+.conteudo-principal-escrito{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 25px;
 }
 
-.conteudo-principal-titulo {
+.conteudo-principal-scrito-titulo {
     font-family: 'Righteous', cursive;
     font-family: 400;
-   font-size: 64px;
+   font-size: 45px;
    color: #fff2e7; 
 }
-.conteudo-principal-titulo {
+.conteudo-principal-scrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ECD6C4;
+}
+.conteudo-principal-scrito-botao {
+    background-color: #ecd6c4;
+    width: 150px;
+    height: 60px;
+    border-radius: 12px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0,25);
+    border: none;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.conteudo-principal-scrito-botao:hover {
+        color: #d34040;
+        animation: translateY 0.8s infinite alternate;
+      }
+      
+      @keyframes translateY {
+        from {
+          transform: translateY(0) scale(1);
+        }
+        to {
+          transform: translateY(-8px) scale(1.1);
+        }
+}
+.conteudo-principal-img {
+    height: 350px;
+}
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 35px;
+    
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid#FFF2E7;
+    padding-top: 48px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 24px;
+    color: #fff2e7;
+    margin-bottom: 16px;
+}
+.conteudo-secundario-paragrafo , strong {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
     color: #ECD6C4;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #fff2e7;
+}
+.rodape-img {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
 }
