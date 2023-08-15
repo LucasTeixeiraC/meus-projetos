@@ -40,6 +40,7 @@ body {
 .conteudo{
     margin-bottom: 48px;
     border-top: 0.4px solid #FFF2E7;
+    padding-left: 15px;
 }
 
 .conteudo-principal {
@@ -92,8 +93,18 @@ body {
         }
 }
 .conteudo-principal-img {
+    overflow: hidden;
+    display: flex;
+    flex: 1;
     height: 350px;
+    transition:  transform 0.1s;
+   
+
 }
+.conteudo-principal-img:hover {
+    transform: scale(1.2);
+}
+
 .conteudo-secundario {
     display: flex;
     flex-direction: column;
