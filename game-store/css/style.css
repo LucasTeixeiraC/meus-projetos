@@ -1,0 +1,44 @@
+/* Importar fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*Definindo cores */
+:root {
+    --main-color: #fa5353;
+    --dark-color: #1b182b;
+    --ligh-color: #322f40;
+    --text-color: hsl(0, 0%, 91%);
+}
+
+/* conf global */ 
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    /*Deixa a rolagem na pagina mais suave e agradavel  */
+    scroll-behavior: smooth;
+    box-sizing: none;
+    list-style: none;
+    text-decoration: none;
+    /*Define o quanto a rolagem vai ser */
+    scroll-padding-top: 2rem;
+}
+img {
+    width: 100%;
+}
+body {
+    color: var(--text-color);
+    background: var(--dark-color);
+}
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark-color);
+    z-index: 100;
+}

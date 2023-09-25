@@ -35,10 +35,17 @@ function ready () {
         var button = addCart[i];
         button.addEventListener("click", addCartClicked);
     }
+    document.getElementsByClassName("btn-buy")[0].addEventListener('click', buyButtonClicked)
 }
+function buyButtonClicked() {
+    alert("You order is placed")
+    var cartContent = document.getElementsByClassName("cart-content")[0]
+    while (cartContent.hasChildNodes()){
+        cartContent.removeChild(cartContent.firstChild);
 
-
-
+    }
+    updatetotal()
+}
 
 function removeCartItem(event) {
     var buttonClicked = event.target
@@ -79,13 +86,11 @@ function addProductToCart(title, price, productImg) {
         return;
     }
 }
-
-
 var cartBoxContent = `
-                <img class="cart-img" src="imagens/product2.jpg" alt="">
+                <img class="cart-img" src="${productImg}" alt="">
                 <div class="detail-box">
-                    <div class="cart-product-title">Earbuds</div>
-                    <div class="cart-price">$25</div>
+                    <div class="cart-product-title">${title}</div>
+                    <div class="cart-price">${price}</div>
                     <input type="number" value="1" class="cart-quantity">
                 </div>
                 <i class='bx bxs-trash-alt cart-remove'></i>`;
@@ -113,3 +118,7 @@ function updatetotal() {
     
 
 } 
+
+
+
+
