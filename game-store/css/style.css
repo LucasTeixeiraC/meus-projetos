@@ -339,7 +339,7 @@ header {
 
 .new-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 250px));
     gap: 1.2rem;
 }
 .next-page {
@@ -601,8 +601,8 @@ html::-webkit-scrollbar {
         margin: 0;
 
     }
-    .about h2 {
-        display: inline-flex;
+    .about h2, .screenshots h2 .download h2 {
+       
         font-size: 1.2rem;
     }
 }
